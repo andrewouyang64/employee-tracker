@@ -1,6 +1,8 @@
 
 # Employee Tracker
 
+Vide demo link: https://watch.screencastify.com/v/qQMFEDuD3V6H9UmmOLam
+
 ## Description
 MYSQL database, node.js, inquirer and notenv are implymented to create this application. It runs on command line to allow user to manager employees.Such as checking employee's name, title, department and salary, as well as add, updating or deleting employee, role and department.
 

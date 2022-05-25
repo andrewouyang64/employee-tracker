@@ -403,14 +403,12 @@ function getRoles() {
   }
 
 
-
   
   // 12. View employees
 
-  function displayEmployees() {
-
-    const sqlGetEmployees = () =>
-    new Promise(function (resolve, reject) {
+  function viewEmployees() {
+    // Query database
+    let queryPromise = new Promise((resolve, reject) => {
       const sql = `	SELECT e.id, e.first_name, e.last_name, title, name AS departments, salary, 
           CONCAT(e2.first_name,' ',e2.last_name) AS manager
           FROM employees AS e
@@ -421,9 +419,15 @@ function getRoles() {
           LEFT JOIN employees AS e2
           ON e.manager_id = e2.id
           ORDER BY e.id;`;
-      db.query(sql, (err, result) => (err ? reject(sqlErr(sql, err)) : result.length === 0 ? reject(red('No employees found')) : resolve(result)));
-    });
+      
+      db.query(sql, function (err, results) {
+      //db.query('SELECT * FROM employees', function (err, results) {
+        resolve(console.table(results));
+      })
+    })
+      .then(() => { tracker() })
   }
+  
   
 
 // Print application's name and database name
