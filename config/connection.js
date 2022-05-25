@@ -1,10 +1,14 @@
+
+require('dotenv').config();
 const db = require('mysql2').createConnection(
 	// database location
 	{
 		host: 'localhost',
-		user: 'root',
-		password: 'My166799sql64$',
-		database: 'tracker_db',
+		user: process.env.DB_USER,
+		password: process.env.DB_PASSWORD,
+		database: process.env.DB_NAME,
+		
+		
 	}
 );
 
