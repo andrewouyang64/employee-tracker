@@ -20,7 +20,7 @@ Firstly to create the database by running the schema.sql and seeds.sql under mys
 ## Usage
 To check, add, update and delete employee, role, department. This application provides a easy way to manager employees.
 
-[![Screenshot](assets/employee-manager-system-screenshot.png)]
+![Screenshot](./assets/employee-manager-system-screenshot.png)
 
 ## Credits
 Andrew Ouyang
@@ -28,7 +28,7 @@ Andrew Ouyang
 ## License
 MIT
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 Please see the license condition: 
 (https://opensource.org/licenses/MIT)
