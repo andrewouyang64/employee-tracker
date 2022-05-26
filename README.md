@@ -15,12 +15,12 @@ MYSQL database, node.js, inquirer and notenv are implymented to create this appl
 
 
 ## Installation
-Under command line type: node index.js, then follow the main men to choose what to do.
+Firstly to create the database by running the schema.sql and seeds.sql under mysql. Then under command line type: node index.js, then follow the main menu to choose what to do.
 
 ## Usage
 To check, add, update and delete employee, role, department. This application provides a easy way to manager employees.
 
-![Screenshot](assets/images/screenshot.png)
+![Screenshot](assets/employee-manager-system-screenshot.png)
 
 ## Credits
 Andrew Ouyang
