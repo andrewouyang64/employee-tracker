@@ -20,7 +20,7 @@ Firstly to create the database by running the schema.sql and seeds.sql under mys
 ## Usage
 To check, add, update and delete employee, role, department. This application provides a easy way to manager employees.
 
-![Screenshot](assets/employee-manager-system-screenshot.png)
+[![Screenshot](assets/employee-manager-system-screenshot.png)]
 
 ## Credits
 Andrew Ouyang
